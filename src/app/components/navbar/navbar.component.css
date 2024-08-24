@@ -1,0 +1,57 @@
+#navbar{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    z-index: 20;
+}
+#navbar h1, h3, p, button{
+    color: rgb(255, 255, 255);
+}
+#button-menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#menu svg{
+    filter: invert(1);
+}
+#menu svg:hover{
+    cursor: pointer;
+}
+#menu{
+    width: 40px;
+}
+#navbar button{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+#navbar button:hover{
+    cursor: pointer;
+}
+#brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#brand img{
+    max-width: 90px;
+    min-width: 5vw;
+    border-radius: 50%;
+}
+#nav-button{
+    display: flex;
+    gap: 20px;
+}
+#nav-button a > button:hover{
+    text-decoration: underline var(--color-3);
+}
+
+@media screen{ 
+    /* minimo de tela 700px */
+}
