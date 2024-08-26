@@ -1,0 +1,107 @@
+#gyms{
+    margin-top: 200px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form div{
+    position: relative;
+}
+input{
+    font-size: large;
+    padding-left: 20px;
+    margin-top: 30px;
+    width: 60vw;
+    height: 70px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#lupa{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+#place-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 63vw;
+    margin: auto;
+}
+#places{
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+#places div p{
+    position: relative;
+    z-index: 20;
+    font-weight: 500;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.8);
+    /* text-shadow: 3px 3px 3px var(--color-1); */
+}
+#places figure{
+    /* position: absolute; */
+    width: 100%;
+    height: 150px;
+}
+#places div{
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    padding: 2% 2%;
+    /* margin: 10px 20% 0 20%; */
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    border: solid 1px var(--color-1);
+}
+#title{
+    margin-top: 20px;
+}
+#places > p, a{
+    text-align: start;
+    margin-left: 20px;
+}
+#display_name{
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.9);
+}
+#places a{
+    display: block;
+    margin-top: 15px;
+    color: var(--color-3);
+}
+#gym-cape{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: grayscale(.5);
+}
+
+@media (max-width: 1100px){
+    #places{
+        width: 30vw;
+    }
+}

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { environment } from 'src/environments/environment';
+import { LocationModel } from '../models/location.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,15 @@ export class LocationService {
     this.client = _client;
   }
 
-  obter(){
-    return this.client.get<any>(this.api + "/weatherforecast");
+  obter(id : string){
+    if (!id.trim()) {
+      return null;
+    }
+
+    return this.client.get<LocationModel[]>(this.api + "/locate/" + id + "&countrycodes=BR&limit=3&addressdetails=1");
+  }
+
+  obterTodos(){
+    return this.client.get<LocationModel[]>(this.api + "/locate");
   }
 }
